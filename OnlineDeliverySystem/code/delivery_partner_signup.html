@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delivery Partner Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            background-image: url('33210633.jpg');
+            background-size: cover;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .box {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            width: 300px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            background-color: #4CAF50;
+            color: #fff;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .already-have-a-account {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="box">
+        <h2>Delivery Partner Signup</h2>
+        <form action="delivery_partner_signup.php" method="post">
+            <div class="form-group">
+                <label for="user_id">UserID:</label><br>
+                <input type="text" id="user_id" name="user_id" required>
+            </div>
+            <div class="form-group">
+                <label for="full_name">Full Name:</label><br>
+                <input type="text" id="full_name" name="full_name" required>
+            </div>
+            <div class="form-group">
+                <label for="new_email">Email:</label><br>
+                <input type="email" id="new_email" name="new_email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone_number">Phone Number:</label><br>
+                <input type="text" id="phone_number" name="phone_number" required>
+            </div>
+            <div class="form-group">
+                <label for="new_password">Password:</label><br>
+                <input type="password" id="new_password" name="new_password" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Sign Up">
+            </div>
+        </form>
+        <div class="already-have-a-account">
+            <p>Already have an account? <a href="delivery_partner_login.html">Login</a></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

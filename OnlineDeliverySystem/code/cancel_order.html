@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Input Order ID</title>
+  <style>
+    body {
+      background-image: url('33210633.jpg');
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .box {
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 5px;
+      width: 300px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+    }
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 3px;
+      background-color: #4CAF50;
+      color: #fff;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    .new-account {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="box">
+    <form action="cancel_order.php" method="post">
+      <div class="form-group">
+        <label for="OrderID">OrderID : </label><br>
+        <input type="text" id="OrderID" name="OrderID" required>
+      </div>
+      <input type="submit" value="Cancel">
+    </form>
+  </div>
+</div>
+</body>
+</html>
